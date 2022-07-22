@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fake News Detection System</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static/style.css">
+
+</head>
+
+<body>
+    <div class="login">
+        <h1>Fake News and Hate Speech Detector</h1>
+    </div>
+    <form action="{{url_for('fakeNews')}}" id='f1'></form>
+    <form action="{{url_for('hateSpeech')}}" id='f2'></form>    
+    <button class="btn" style="margin-top: 10%" form="f1">
+        Detect Fake News
+    </button>
+    <button class="btn" id="b1" style="margin-top:25px" form="f2">
+        Detect Hate Speech
+    </button>
+    </div>
+</body>
+
+</html>

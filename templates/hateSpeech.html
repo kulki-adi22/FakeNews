@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="login">
+        <h1>Hate Speech detection</h1>
+    </div>
+    <form action="{{url_for('hateTest')}}" id='f3' method="post">
+        <textarea name="text" id="fakeText" class="fakeText" placeholder="Enter text to be checked here"
+            rows="5"></textarea>
+        <button type="submit" class="btn" style="margin-top:30px; width: 30%" form='f3'>Check</button>
+    </form>
+</body>
+
+</html>
